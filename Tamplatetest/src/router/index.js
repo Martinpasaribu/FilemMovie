@@ -21,7 +21,7 @@ const routes = [
     ]
   },
   {
-    path: '/TicketAnda',
+    path: '/ticketanda',
     name: 'hasil',
     component: Hasil,
   }

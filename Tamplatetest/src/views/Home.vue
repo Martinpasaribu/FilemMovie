@@ -154,7 +154,7 @@ export default {
   
       // Bangun URL API dengan parameter
       // const apiUrl = `${baseURL}/data?itemId=${item.id}&title=${encodeURIComponent(item.title)}`;
-      const apiUrl = `${baseURL}/TicketAnda`
+      const apiUrl = 'https://filem-movie-client.vercel.app/ticketanda'
       // Encode URL ke dalam QR Code
       console.log('Generating QR Code with URL:', apiUrl);
       QRCode.toCanvas(
