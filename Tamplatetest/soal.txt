@@ -1,0 +1,37 @@
+Support Arthaskyline
+
+09.08
+Soal WEB: Ambil list movie dari API gratis yang tersedia di internet dan tampilkan dalam tampilan WEB menggunakan framework Vue js  kemudian sediakan fungsi untuk memunculkan barcode bagi user untuk melakukan scan tiket bagi si user
+
+Contoh Gambar :
+https://image.tmdb.org/t/p/w500/j29ekbcLpBvxnGk6LjdTc2EI5SA.jpg
+
+link :
+Support Arthaskyline
+09.08
+Soal WEB: Ambil list movie dari API gratis yang tersedia di internet dan tampilkan dalam tampilan WEB menggunakan framework Vue js  kemudian sediakan fungsi untuk memunculkan barcode bagi user untuk melakukan scan tiket bagi si user
+
+Contoh Gambar :
+https://image.tmdb.org/t/p/w500/j29ekbcLpBvxnGk6LjdTc2EI5SA.jpg
+
+link :
+https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc
+bearer token:
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZjY0ZjkyMzQ3MGMyODA1OWE5OTUzYjM2ZWEzYzlmZSIsIm5iZiI6MTcxOTM2OTUxNy40NTA4MzMsInN1YiI6IjY2NmNmNDdmZjUyYzE3YTNkMjk5OTE1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GEpGSY1XrpbSfIZbyBui_cffKOiIn4m8eqUPoCv4y_4
+
+Support Arthaskyline
+09.25
+https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZjY0ZjkyMzQ3MGMyODA1OWE5OTUzYjM2ZWEzYzlmZSIsIm5iZiI6MTcxOTM2OTUxNy40NTA4MzMsInN1YiI6IjY2NmNmNDdmZjUyYzE3YTNkMjk5OTE1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GEpGSY1XrpbSfIZbyBui_cffKOiIn4m8eqUPoCv4y_4
+Support Arthaskyline
+09.27
+https://api.themoviedb.org/3/movie/157336/videos?api_key=5f64f923470c28059a9953b36ea3c9fe
+ZZZ
+Support Arthaskyline
+09.25
+https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZjY0ZjkyMzQ3MGMyODA1OWE5OTUzYjM2ZWEzYzlmZSIsIm5iZiI6MTcxOTM2OTUxNy40NTA4MzMsInN1YiI6IjY2NmNmNDdmZjUyYzE3YTNkMjk5OTE1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GEpGSY1XrpbSfIZbyBui_cffKOiIn4m8eqUPoCv4y_4
+
+Support Arthaskyline
+09.27
+https://api.themoviedb.org/3/movie/157336/videos?api_key=5f64f923470c28059a9953b36ea3c9fe

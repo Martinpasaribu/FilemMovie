@@ -1,0 +1,309 @@
+//Dapatkan Info Data User/Admin
+GET https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZjY0ZjkyMzQ3MGMyODA1OWE5OTUzYjM2ZWEzYzlmZSIsIm5iZiI6MTcxOTM2OTUxNy40NTA4MzMsInN1YiI6IjY2NmNmNDdmZjUyYzE3YTNkMjk5OTE1NiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GEpGSY1XrpbSfIZbyBui_cffKOiIn4m8eqUPoCv4y_4
+Content-Type: application/json
+
+
+
+
+
+
+
+
+
+
+
+###
+// Register User/Admin
+POST   http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+
+    "name": "Admin 1",
+    "email": "a@gmail.com",
+    "password": "1234",
+    "confPassword": "1234",
+    "role": "admin"
+}
+
+
+
+
+// Cari UserID
+###
+GET   http://localhost:5000/user/d08a41cd-7dba-4da2-b0f1-2055ce746c12
+
+
+###
+// Update user
+PATCH  http://localhost:5000/user/d08a41cd-7dba-4da2-b0f1-2055ce746c12 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Martin Pasaribu",
+    "email": "Jhon@gmail.com",
+    "password": "1234",
+    "confPassword": "1234",
+    "role": "user"
+}
+
+// Deleted User
+###
+DELETE   http://localhost:5000/user/6c2df856-00c8-46f8-ae26-71ac9406d6fc HTTP/1.1
+
+
+
+###############################################################################
+
+
+
+##################################################### Login ###############################################################
+
+###
+// Login Admin
+POST   http://localhost:5000/login 
+content-type: application/json
+
+{
+    "email": "a@gmail.com",
+    "password": "1234"
+}
+
+
+###
+// Login User
+POST   http://localhost:5000/login 
+content-type: application/json
+
+{
+    "email": "U@gmail.com",
+    "password": "1234"
+}
+###
+// Get Me
+GET   http://localhost:5000/me 
+
+###
+// Logout
+DELETE  http://localhost:5000/logout 
+
+
+#################################################### Produk  ########################################################################
+
+###
+// Get All Produk
+GET   http://localhost:5000/product
+
+
+###
+// Tambah Produk
+POST  http://localhost:5000/product 
+content-type: application/json
+
+{
+    "name": "Kulkas",
+    "harga": 2202000
+}
+
+// Ambil data berdasrkan ID
+###
+GET   http://localhost:5000/product/76a92b47-f8a1-4d46-a253-9d45e7094807
+
+###
+// uPDATE Produk
+PATCH   http://localhost:5000/product/76a92b47-f8a1-4d46-a253-9d45e7094807
+content-type: application/json
+
+{
+    "name": "kulkas 1 pintu ",
+    "harga": 104000
+}
+
+###
+// Hapus Produk
+DELETE  http://localhost:5000/product/76a92b47-f8a1-4d46-a253-9d45e7094807
+
+
+
+
+
+============================================= Pembeli ======================================
+
+
+
+###
+// Register Pembeli
+POST   http://localhost:5000/pembeli HTTP/1.1
+content-type: application/json
+
+{
+    "name": "jony ",
+    "email": "j@gmail.com",
+    "password": "1234",
+    "confPassword": "1234"
+   
+}
+
+###
+// Register Pembeli
+POST   http://localhost:5000/pembeli 
+content-type: application/json
+
+{
+    "name": "tia ",
+    "email": "t@gmail.com",
+    "password": "1234",
+    "confPassword": "1234"
+   
+}
+
+###
+// Login Pembeli
+POST   http://localhost:5000/masuk
+content-type: application/json
+
+{
+    "email": "j@gmail.com",
+    "password": "1234"  
+}
+
+
+###
+// Get Cek
+GET   http://localhost:5000/cek 
+
+
+###
+// Logout
+DELETE  http://localhost:5000/keluar 
+
+
+###
+// Get All User Pembeli
+GET   http://localhost:5000/ambiluser
+
+
+// Ambil data berdasrkan ID
+###
+GET   http://localhost:5000/product/8b9e0a4d-74e3-48f0-9ad9-986dcc804302
+
+
+
+
+###
+// Hapus Produk
+DELETE  http://localhost:5000/hapususer/96fcbe85-5c6a-4784-89d6-e30222a4d874
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+// register
+POST   http://localhost:5000/user HTTP/1.1
+content-type: application/json
+
+{
+
+    "name": "user",
+    "email": "user@gmail.com",
+    "password": "1234",
+    "confPassword": "1234",
+    "role": "user"
+}
+
+###
+GET   http://localhost:5000/user/e78d0622-5e8d-43e1-a993-29d44c3f740f HTTP/1.1
+
+
+
+
+// Deleted User
+###
+DELETE   http://localhost:5000/user/c54ab86d-2113-46c3-b867-a205d2f2ccf0 HTTP/1.1
+
+
+###
+
+// Login Admin 
+POST   http://localhost:5000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "martin@gmail.com",
+    "password": "1234"
+}
+###
+// Login User 
+POST   http://localhost:5000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "1234"
+}
+###
+// cek login
+GET   http://localhost:5000/me HTTP/1.1
+
+
+###
+// Logout
+DELETE   http://localhost:5000/logout HTTP/1.1
+
+###
+// Lihat semua product
+GET    http://localhost:5000/product HTTP/1.1
+
+
+###
+// Lihat semua product
+GET    http://localhost:5000/user HTTP/1.1
+
+###
+// Lihat 1 product
+GET    http://localhost:5000/product/e49c5153-19f5-4caf-a2e6-89a4c833aa58 HTTP/1.1
+
+
+###
+// add product 
+POST   http://localhost:5000/product HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product 4",
+    "price": 150
+}
+
+###
+// Update product 
+PATCH  http://localhost:5000/product/bdc45e05-c865-4689-b6b6-b4dc3e130002 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Product 2X2",
+    "price": 250
+}
+###
+// Hapus product 
+DELETE   http://localhost:5000/product/463f1ec4-c9ea-4239-a1f7-4f639a1a599d HTTP/1.1
