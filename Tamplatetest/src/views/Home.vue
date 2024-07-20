@@ -154,7 +154,7 @@ export default {
   
       // Bangun URL API dengan parameter
       // const apiUrl = `${baseURL}/data?itemId=${item.id}&title=${encodeURIComponent(item.title)}`;
-      const apiUrl = 'http://localhost:3000/TicketAnda'
+      const apiUrl = `${baseURL}/TicketAnda`
       // Encode URL ke dalam QR Code
       console.log('Generating QR Code with URL:', apiUrl);
       QRCode.toCanvas(
