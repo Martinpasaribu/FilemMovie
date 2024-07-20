@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosClient2 = axios.create({
-  baseURL: 'http://localhost:5000', withCredentials: true
+  baseURL: 'https://filem-movie-server.vercel.app', withCredentials: true
 });
 
 export default axiosClient2
