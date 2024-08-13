@@ -1,0 +1,6 @@
+sudah ada route
+server
+axios 
+api dari luar 
+create qr 
+db test
